@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val mfragmentManager=supportFragmentManager
+        val mfragmentManager=supportFragmentManager// untuk operasi add, comit, replace .beginTransaction()
         val mHomeFragment=HomeFragment()// buat objek dari home fragment
         val fragment=mfragmentManager.findFragmentByTag(HomeFragment::class.java.simpleName)
         if(fragment!is HomeFragment){
